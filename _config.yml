@@ -1,8 +1,8 @@
 title: "My Blog"
 email: "muina@duck.com"
 description: "A simple blog based on Editorial template"
-baseurl: "https://hakim.orderio.my.id/12345" # root directory
-url: "https://hakim.orderio.my.id/12345" # URL GitHub Pages
+baseurl: "/12345" # root directory
+url: "https://hakim.orderio.my.id" # URL GitHub Pages
 
 markdown: kramdown
 theme: minima
