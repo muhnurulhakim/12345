@@ -1,0 +1,21 @@
+/* Basic Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.75em;
+}
+#header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+#footer {
+    background: #222;
+    color: #fff;
+    padding: 2em 0;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
