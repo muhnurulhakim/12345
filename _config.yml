@@ -1,7 +1,7 @@
 title: "My Blog"
 email: "muina@duck.com"
 description: "A simple blog based on Editorial template"
-baseurl: "/12345" # root directory
+baseurl: "/12345" # root directory for GitHub Pages
 url: "https://hakim.orderio.my.id" # URL GitHub Pages
 
 markdown: kramdown
@@ -10,3 +10,4 @@ theme: minima
 plugins:
   - jekyll-feed
 
+permalink: /:year-:month-:day-:title/
