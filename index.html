@@ -16,7 +16,7 @@ title: Home
             <h2>Latest Posts</h2>
             {% for post in site.posts %}
                 <article>
-                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                     <time datetime="{{ post.date }}">{{ post.date | date: "%B %d, %Y" }}</time>
                     <p>{{ post.excerpt }}</p>
                 </article>
@@ -27,8 +27,5 @@ title: Home
 
 {% include footer.html %}
 
-
-
 <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.9.7/dist/netlify-cms.css">
 <script src="https://unpkg.com/netlify-cms@^2.9.7/dist/netlify-cms.js"></script>
-
