@@ -1,19 +1,27 @@
-backend:
-  name: git-gateway
-  branch: main
-
-publish_mode: editorial_workflow
-
-media_folder: "assets/images/uploads"
-public_folder: "/12345/images/uploads"
-
-collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+<script>
+  window.CMS_MANUAL_INIT = true;
+  CMS.init({
+    config: {
+      backend: {
+        name: 'git-gateway',
+        branch: 'main',
+      },
+      media_folder: 'assets/images/uploads',
+      public_folder: '/12345/assets/images/uploads',
+      collections: [
+        {
+          name: 'posts',
+          label: 'Posts',
+          folder: '_posts',
+          create: true,
+          slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+          fields: [
+            {label: 'Title', name: 'title', widget: 'string'},
+            {label: 'Publish Date', name: 'date', widget: 'datetime'},
+            {label: 'Body', name: 'body', widget: 'markdown'},
+          ],
+        },
+      ],
+    },
+  });
+</script>
